@@ -652,10 +652,11 @@
     }
     .hero-subtitle {
       font-size: 1rem;
-      line-height: 1.8;
+      line-height: 1.7;
       color: var(--mid);
-      max-width: 420px;
+      max-width: 460px;
       margin-bottom: 2.75rem;
+      text-wrap: pretty;
     }
     .hero-actions {
       display: flex;
