@@ -108,8 +108,8 @@ const header = document.getElementById("header");
     var items = [];
     var idx   = 0;
 
-    function open(i) {
-      items = getItems();
+    function open(i, list) {
+      items = list || getItems();
       idx = i;
       show();
       lb.classList.add('open');
@@ -161,6 +161,10 @@ const header = document.getElementById("header");
     lbClose.addEventListener('click', close);
     lbNext.addEventListener('click', next);
     lbPrev.addEventListener('click', prev);
+
+    // Visor reutilizable: otras secciones (p. ej. Productos Destacados)
+    // pueden abrirlo pasando su propia lista de imágenes.
+    window.__mlLightboxOpen = open;
 
     // Cerrar al hacer clic fuera de la imagen
     lb.addEventListener('click', function(e) {
