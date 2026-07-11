@@ -204,7 +204,7 @@
         <a href="#hero" style="font-weight:600">Inicio</a>
         <a href="#servicios" style="font-weight:600">Servicios</a>
         <a href="#galeria" style="font-weight:600">Galería</a>
-        <a href="#productos" style="font-weight:600">Productos</a>
+        <a href="productos.html" style="font-weight:600">Productos</a>
         <a href="#nosotros" style="font-weight:600">Nosotros</a>
         <a href="#contacto" style="font-weight:600">Contacto</a>
       </div>
@@ -219,7 +219,7 @@
   <a href="#hero" class="mobile-link">Inicio</a>
   <a href="#servicios" class="mobile-link">Servicios</a>
   <a href="#galeria" class="mobile-link">Galería</a>
-  <a href="#productos" class="mobile-link">Productos</a>
+  <a href="productos.html" class="mobile-link">Productos</a>
   <a href="#nosotros" class="mobile-link">Nosotros</a>
   <a href="#faq" class="mobile-link">FAQ</a>
   <a href="#contacto" class="mobile-link">Contacto</a>
@@ -444,16 +444,20 @@
   </div>
 </section>
 
-<!-- PRODUCTOS DESTACADOS -->
+<!-- PRODUCTOS DESTACADOS (acceso al catálogo) -->
 <section id="productos" class="section" role="region" aria-labelledby="productos-title">
   <div class="container">
-    <div class="section-header text-center reveal" style="margin-bottom:0;">
-      <span class="eyebrow">Nuestro catálogo</span>
-      <h2 class="display-lg" id="productos-title">Productos<br>destacados</h2>
-      <p class="body-lg" style="max-width:520px;margin:1rem auto 0;font-weight:500">Una selección de nuestros ramos, plantas y artículos más consultados para ayudarte a encontrar la opción ideal.</p>
-    </div>
-    <div class="prod-filters reveal" id="prodFilters" aria-label="Filtrar productos por categoría"></div>
-    <div class="products-grid" id="productsGrid"></div>
+    <a href="productos.html" class="products-teaser reveal" aria-label="Ver el catálogo de productos destacados">
+      <img src="img/27-ramo-de-flores-secas-en-estanter.webp" alt="Productos destacados de Florería María Lidia: ramos, plantas, deco y aromas" loading="lazy">
+      <div class="products-teaser-overlay">
+        <span class="service-tag">Nuestro catálogo</span>
+        <h2 class="display-lg" id="productos-title" style="color:var(--white);">Productos<br>destacados</h2>
+        <p class="products-teaser-desc">Ramos, plantas y artículos más consultados: encontrá tu opción ideal y consultala por WhatsApp.</p>
+        <span class="products-teaser-btn">Explorar el catálogo
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </span>
+      </div>
+    </a>
   </div>
 </section>
 
@@ -687,5 +691,4 @@
 
 
 <script src="js/main.js?v=2"></script>
-<script src="js/productos.js?v=2"></script>
 </body></html>
