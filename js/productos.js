@@ -15,7 +15,7 @@
   if (!grid || !filters) return;
 
   /* ── Carga del catálogo ── */
-  fetch("js/catalogo.json?v=35")
+  fetch("js/catalogo.json?v=36")
     .then(function (r) {
       if (!r.ok) throw new Error("No se pudo cargar catalogo.json");
       return r.json();
@@ -30,11 +30,14 @@
     var SITIO      = (data.sitio || "").replace(/\/$/, "");
 
     /* Mensaje de WhatsApp con el nombre del producto de ESA tarjeta Y el link
-       directo a esa foto en la web. Así, cuando llega el mensaje, hacés clic
-       en el link y ves exactamente el producto que te está consultando el cliente.
-       Sale de catalogo.json, así que siempre coincide con lo que ve el cliente. */
+       directo a esa foto en la web. Usa /p/<id> (página liviana con Open Graph
+       propio) en vez de productos.html?p=... directo, para que WhatsApp muestre
+       la FOTO REAL del producto en la vista previa del link, no la imagen
+       genérica del sitio. Esa página liviana redirige sola a productos.html
+       con la foto abierta. Sale de catalogo.json, siempre coincide con lo que
+       ve el cliente. */
     function productLink(p) {
-      return SITIO + "/productos.html?p=" + encodeURIComponent(p.id) + "#" + p.cat;
+      return SITIO + "/p/" + encodeURIComponent(p.id);
     }
     function waLink(p) {
       var msg = 'Hola. Me interesa el producto "' + p.name +
