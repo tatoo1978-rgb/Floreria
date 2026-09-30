@@ -53,7 +53,6 @@ function template({ title, desc, shareUrl, imageUrl, alt, redirectUrl, name }) {
 <meta name="twitter:description" content="${desc}">
 <meta name="twitter:image" content="${imageUrl}">
 
-<meta http-equiv="refresh" content="0; url=${redirectUrl}">
 <link rel="icon" href="/favicon.ico">
 <style>
   body{font-family:-apple-system,system-ui,sans-serif;background:#faf8f5;color:#3a352f;
@@ -62,6 +61,11 @@ function template({ title, desc, shareUrl, imageUrl, alt, redirectUrl, name }) {
   a{color:#7a8d6f;font-weight:600}
   img{max-width:280px;border-radius:12px;margin-bottom:16px}
 </style>
+<!-- OJO: a propósito NO hay <meta http-equiv="refresh">. El rastreador de
+     WhatsApp/Facebook sigue ese tipo de redirección antes de leer el Open
+     Graph y termina tomando la foto genérica de productos.html. La
+     redirección va SOLO por JS (no la ejecutan los rastreadores, pero sí
+     cualquier navegador real, y es instantánea). -->
 <script>location.replace("${redirectUrl}");</script>
 </head>
 <body>
