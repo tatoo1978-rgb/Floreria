@@ -15,7 +15,7 @@
   if (!grid || !filters) return;
 
   /* ── Carga del catálogo ── */
-  fetch("js/catalogo.json?v=38")
+  fetch("js/catalogo.json?v=36")
     .then(function (r) {
       if (!r.ok) throw new Error("No se pudo cargar catalogo.json");
       return r.json();
@@ -27,12 +27,22 @@
     var CATEGORIAS = data.categorias;
     var PRODUCTOS  = data.productos;
     var WAPP       = data.whatsapp;
+    var SITIO      = (data.sitio || "").replace(/\/$/, "");
 
-    /* Mensaje de WhatsApp con el nombre del producto de ESA tarjeta.
-       Sale de catalogo.json, así que siempre coincide con lo que ve el cliente. */
+    /* Mensaje de WhatsApp con el nombre del producto de ESA tarjeta Y el link
+       directo a esa foto en la web. Usa /p/<id> (página liviana con Open Graph
+       propio) en vez de productos.html?p=... directo, para que WhatsApp muestre
+       la FOTO REAL del producto en la vista previa del link, no la imagen
+       genérica del sitio. Esa página liviana redirige sola a productos.html
+       con la foto abierta. Sale de catalogo.json, siempre coincide con lo que
+       ve el cliente. */
+    function productLink(p) {
+      return SITIO + "/p/" + encodeURIComponent(p.id);
+    }
     function waLink(p) {
       var msg = 'Hola. Me interesa el producto "' + p.name +
-        '" que vi en la sección Productos Destacados de su página web. ¿Podrían brindarme más información?';
+        '" que vi en la sección Productos Destacados de su página web: ' + productLink(p) +
+        ' ¿Podrían brindarme más información?';
       return "https://wa.me/" + WAPP + "?text=" + encodeURIComponent(msg);
     }
 
@@ -46,6 +56,7 @@
     function buildCard(p, i) {
       var card = document.createElement("article");
       card.className = "product-card reveal reveal-delay-" + ((i % 3) + 1);
+      card.setAttribute("data-id", p.id);
       card.innerHTML =
         '<div class="product-media" role="button" tabindex="0" aria-label="Ampliar imagen de ' + p.name + '">' +
           '<img src="' + (p.cover || p.imgs[0]) + '" alt="' + p.alt + '" loading="lazy">' +
@@ -135,5 +146,20 @@
     });
 
     aplicar(inicial);
+
+    /* ── Deep link desde WhatsApp: ?p=<id-del-producto> ──
+       Abre directo la foto del producto que te está consultando el cliente,
+       sin que tengas que buscarlo manualmente en el catálogo. */
+    var pedidoId = new URLSearchParams(location.search).get("p");
+    if (pedidoId) {
+      setTimeout(function () {
+        var card = grid.querySelector('.product-card[data-id="' + pedidoId.replace(/"/g, '') + '"]');
+        if (!card) return;
+        card.scrollIntoView({ behavior: "smooth", block: "center" });
+        card.classList.add("product-highlight");
+        var media = card.querySelector(".product-media");
+        if (media) openSingle(media);
+      }, 150);
+    }
   }
 })();

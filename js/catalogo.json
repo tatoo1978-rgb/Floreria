@@ -19,7 +19,8 @@
         "img/32-ramo-multicolor.webp",
         "img/22-ramo-de-margaritas-blancas.webp"
       ],
-      "alt": "Bouquet de flores de estación — Florería María Lidia, Rafaela"
+      "alt": "Bouquet de flores de estación — Florería María Lidia, Rafaela",
+      "id": "ramos-bouquet-de-estacion"
     },
     {
       "cat": "ramos",
@@ -28,7 +29,8 @@
       "imgs": [
         "img/82-bouquet-especial-floreria-maria-lidia.webp"
       ],
-      "alt": "Bouquet especial XL de flores — Florería María Lidia, Rafaela"
+      "alt": "Bouquet especial XL de flores — Florería María Lidia, Rafaela",
+      "id": "ramos-bouquets-especiales"
     },
     {
       "cat": "ramos",
@@ -40,7 +42,8 @@
         "img/85-ramo-de-6-rosas-floreria-maria-lidia.webp",
         "img/86-ramo-de-12-rosas-floreria-maria-lidia.webp"
       ],
-      "alt": "Ramo de rosas — Florería María Lidia, Rafaela"
+      "alt": "Ramo de rosas — Florería María Lidia, Rafaela",
+      "id": "ramos-ramos-de-rosas"
     },
     {
       "cat": "plantas",
@@ -56,7 +59,8 @@
         "img/57-plantas-de-interior-floreria-maria-lidia.webp",
         "img/58-plantas-de-interior-floreria-maria-lidia.webp"
       ],
-      "alt": "Plantas de interior — Florería María Lidia, Rafaela"
+      "alt": "Plantas de interior — Florería María Lidia, Rafaela",
+      "id": "plantas-plantas-de-interior"
     },
     {
       "cat": "plantas",
@@ -69,7 +73,8 @@
         "img/94-macetas-rotomoldeada-cacao-floreria-maria-lidia.webp",
         "img/95-macetas-rotomoldeadas-arena-negro-floreria-maria-lidia.webp"
       ],
-      "alt": "Macetas rotomoldeadas — Florería María Lidia, Rafaela"
+      "alt": "Macetas rotomoldeadas — Florería María Lidia, Rafaela",
+      "id": "plantas-macetas-rotomoldeadas"
     },
     {
       "cat": "plantas",
@@ -82,7 +87,8 @@
         "img/73-macetas-ceramica-esmaltada-floreria-maria-lidia.webp",
         "img/74-macetas-ceramica-esmaltada-floreria-maria-lidia.webp"
       ],
-      "alt": "Macetas de cerámica esmaltada — Florería María Lidia, Rafaela"
+      "alt": "Macetas de cerámica esmaltada — Florería María Lidia, Rafaela",
+      "id": "plantas-macetas-de-ceramica-esmaltada"
     },
     {
       "cat": "plantas",
@@ -95,7 +101,8 @@
         "img/91-maceta-de-metal-rhoda-bordo-floreria-maria-lidia.webp",
         "img/89-maceta-de-metal-rhoda-medidas-floreria-maria-lidia.webp"
       ],
-      "alt": "Macetas de metal — Florería María Lidia, Rafaela"
+      "alt": "Macetas de metal — Florería María Lidia, Rafaela",
+      "id": "plantas-macetas-de-metal"
     },
     {
       "cat": "plantas",
@@ -104,7 +111,8 @@
       "imgs": [
         "img/25-canastos-artesanales-del-local.webp"
       ],
-      "alt": "Macetas de fibra natural — Florería María Lidia, Rafaela"
+      "alt": "Macetas de fibra natural — Florería María Lidia, Rafaela",
+      "id": "plantas-macetas-de-fibra-natural"
     },
     {
       "cat": "deco",
@@ -117,7 +125,8 @@
         "img/velas-05-campana-dorada-lovely-george.webp",
         "img/velas-03-pure-negra.webp"
       ],
-      "alt": "Velas naturales Lovely George — Florería María Lidia, Rafaela"
+      "alt": "Velas naturales Lovely George — Florería María Lidia, Rafaela",
+      "id": "deco-velas-naturales"
     },
     {
       "cat": "deco",
@@ -127,7 +136,8 @@
         "img/59-velas-led-floreria-maria-lidia.webp",
         "img/60-velas-led-floreria-maria-lidia.webp"
       ],
-      "alt": "Velas LED decorativas — Florería María Lidia, Rafaela"
+      "alt": "Velas LED decorativas — Florería María Lidia, Rafaela",
+      "id": "deco-velas-led"
     },
     {
       "cat": "deco",
@@ -137,7 +147,8 @@
         "img/62-difusor-sara-rose-prive-la-vie.webp",
         "img/61-difusor-lovely-george-floreria-maria-lidia.webp"
       ],
-      "alt": "Difusores de ambiente — Florería María Lidia, Rafaela"
+      "alt": "Difusores de ambiente — Florería María Lidia, Rafaela",
+      "id": "deco-difusores-de-ambiente"
     },
     {
       "cat": "deco",
@@ -148,7 +159,8 @@
         "img/63-hidroterrarios-con-raices-floreria-maria-lidia.webp",
         "img/61-floreros-de-vidrio-floreria-maria-lidia.webp"
       ],
-      "alt": "Floreros e hidroterrarios — Florería María Lidia, Rafaela"
+      "alt": "Floreros e hidroterrarios — Florería María Lidia, Rafaela",
+      "id": "deco-floreros-e-hidroterrarios"
     },
     {
       "cat": "deco",
@@ -158,7 +170,8 @@
         "img/69-fanales-de-vidrio-ahumado-floreria-maria-lidia.webp",
         "img/70-fanales-base-negra-floreria-maria-lidia.webp"
       ],
-      "alt": "Fanales decorativos — Florería María Lidia, Rafaela"
+      "alt": "Fanales decorativos — Florería María Lidia, Rafaela",
+      "id": "deco-fanales"
     },
     {
       "cat": "deco",
@@ -169,7 +182,8 @@
         "img/65-bandejas-ceramica-apiladas-floreria-maria-lidia.webp",
         "img/66-bandejas-rattan-madera-floreria-maria-lidia.webp"
       ],
-      "alt": "Bandejas y cerámica decorativa — Florería María Lidia, Rafaela"
+      "alt": "Bandejas y cerámica decorativa — Florería María Lidia, Rafaela",
+      "id": "deco-bandejas-ceramica"
     },
     {
       "cat": "deco",
@@ -181,7 +195,8 @@
         "img/35-canasto-de-flores-secas.webp",
         "img/67-flores-preservadas-sobre-mesa-floreria-maria-lidia.webp"
       ],
-      "alt": "Flores preservadas — Florería María Lidia, Rafaela"
+      "alt": "Flores preservadas — Florería María Lidia, Rafaela",
+      "id": "deco-flores-preservadas"
     },
     {
       "cat": "eventos",
@@ -193,7 +208,8 @@
         "img/76-ramo-de-novia-calas-floreria-maria-lidia.webp",
         "img/77-ramo-de-novia-calas-floreria-maria-lidia.webp"
       ],
-      "alt": "Ramo de novia — Florería María Lidia, Rafaela"
+      "alt": "Ramo de novia — Florería María Lidia, Rafaela",
+      "id": "eventos-ramos-de-novia"
     },
     {
       "cat": "eventos",
@@ -203,7 +219,8 @@
         "img/96-boutonniere-en-solapa-floreria-maria-lidia.webp",
         "img/97-boutonniere-sobre-lino-floreria-maria-lidia.webp"
       ],
-      "alt": "Boutonnière para casamiento — Florería María Lidia, Rafaela"
+      "alt": "Boutonnière para casamiento — Florería María Lidia, Rafaela",
+      "id": "eventos-boutonniere"
     },
     {
       "cat": "eventos",
@@ -215,7 +232,8 @@
         "img/79-ambientacion-floral-eventos-floreria-maria-lidia.webp",
         "img/81-ambientacion-floral-eventos-floreria-maria-lidia.webp"
       ],
-      "alt": "Ambientación floral para eventos — Florería María Lidia, Rafaela"
+      "alt": "Ambientación floral para eventos — Florería María Lidia, Rafaela",
+      "id": "eventos-ambientacion-floral"
     },
     {
       "cat": "condolencias",
@@ -224,7 +242,8 @@
       "imgs": [
         "img/48-palma-floral-condolencias-floreria-maria-lidia.webp"
       ],
-      "alt": "Palma floral para condolencias — Florería María Lidia Rafaela"
+      "alt": "Palma floral para condolencias — Florería María Lidia Rafaela",
+      "id": "condolencias-palmas"
     },
     {
       "cat": "condolencias",
@@ -234,7 +253,8 @@
         "img/46-cruz-floral-condolencias-floreria-maria-lidia.webp",
         "img/47-corazon-floral-condolencias-floreria-maria-lidia.webp"
       ],
-      "alt": "Cruces y corazones florales para memoriales — Florería María Lidia Rafaela"
+      "alt": "Cruces y corazones florales para memoriales — Florería María Lidia Rafaela",
+      "id": "condolencias-cruces-y-corazones"
     },
     {
       "cat": "condolencias",
@@ -243,7 +263,8 @@
       "imgs": [
         "img/34-ramo-de-rosas-blancas.webp"
       ],
-      "alt": "Ramo floral blanco para condolencias — Florería María Lidia Rafaela"
+      "alt": "Ramo floral blanco para condolencias — Florería María Lidia Rafaela",
+      "id": "condolencias-ramos-florales"
     },
     {
       "cat": "empresas",
@@ -254,7 +275,8 @@
         "img/104-inauguraciones-arreglo-en-florero-lisianthus-violeta-floreria-maria-lidia.webp",
         "img/102-inauguraciones-ramo-lilium-y-lisianthus-rosa-floreria-maria-lidia.webp"
       ],
-      "alt": "Arreglos florales para inauguraciones — Florería María Lidia, Rafaela"
+      "alt": "Arreglos florales para inauguraciones — Florería María Lidia, Rafaela",
+      "id": "empresas-inauguraciones"
     },
     {
       "cat": "empresas",
@@ -263,7 +285,8 @@
       "imgs": [
         "img/101-arreglo-floral-evento-institucional-floreria-maria-lidia.webp"
       ],
-      "alt": "Ambientación floral para eventos institucionales — Florería María Lidia, Rafaela"
+      "alt": "Ambientación floral para eventos institucionales — Florería María Lidia, Rafaela",
+      "id": "empresas-eventos-institucionales"
     },
     {
       "cat": "empresas",
@@ -272,7 +295,8 @@
       "imgs": [
         "img/21-bolsa-de-regalo-negra.webp"
       ],
-      "alt": "Regalos corporativos florales — Florería María Lidia, Rafaela"
+      "alt": "Regalos corporativos florales — Florería María Lidia, Rafaela",
+      "id": "empresas-regalos-corporativos"
     }
   ]
 }
