@@ -15,7 +15,7 @@
   if (!grid || !filters) return;
 
   /* ── Carga del catálogo ── */
-  fetch("js/catalogo.json?v=37")
+  fetch("js/catalogo.json?v=38")
     .then(function (r) {
       if (!r.ok) throw new Error("No se pudo cargar catalogo.json");
       return r.json();
